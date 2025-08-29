@@ -89,8 +89,9 @@ function handleClick(event) {
     return;
   }
   const modalImg = event.target.dataset.source;
+  const altText = event.target.alt;
   const instance = basicLightbox.create(`
-    <img src="${modalImg}" width="1112" height="640">
+    <img src="${modalImg}" alt="${altText}">
 `);
 
   instance.show();
